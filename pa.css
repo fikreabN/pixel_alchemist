@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --co1: #e3e6f5;
+    --co2: #bfc3f8;
+    --co3: #003cff;
+    --co4: #d7e2ff;
+    --co5: rgb(63, 63, 77);
+    --co6: linen;
+    --c07: rgba(221, 6, 6, 0.705);
+    color: var(--co5);
+    --fo1: 'Brush Script MT';
+    --fo2: fantasy;
+    --fo3: Verdana, Geneva, Tahoma, sans-serif;
+    --fo4: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fo5: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --fo6: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --fo6: cursive;
+}
+body {
+    background: var(--co1); 
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45px;   
+    font-family: var(--fo5); 
+    border-bottom: 1px solid;
+    position: sticky;
+    background-color: var(--co1);
+}
+a{
+    color: var(--co5);
+    text-decoration: none;
+}
+.name{
+    display: inline;
+    position: relative;
+    left: 30px;
+    font-weight: bold;
+}
+nav div{
+    padding-top: 10px;
+}
+.cart{ 
+    margin-right: 40px;
+    }
+@media(max-width: 1070px){
+    a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .cart{
+        padding: 3px;
+        right: 30px;
+    }
+    .name{
+        left: 30px;
+    }
+    .img{
+        height: 250px;
+        border-radius: 20px;
+    }
+    .w-cont {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 10vw;
+    }
+    .w-cont div button {
+        display: block;
+        width: 70%;
+        height: 30px;
+        position: relative;
+        margin-left: 10px;
+        border-radius: 20px;
+        border: 1px solid;
+    }
+    .bttn-1 {
+        margin-bottom: 30px;
+        margin-top: -70px;
+        top: -23px;
+    }
+    .bttn-2 {
+        margin-bottom: 5px;
+        top: -1px;
+        margin-top: -40px;
+    }
+    .red-not {
+        width: 15px;
+        height: 15px;
+        background-color:rgb(88, 88, 88);
+        position: relative;
+        border-radius: 50%;
+        bottom: 23px; 
+        left: 50px;
+        padding-bottom: 19px;
+        padding-left: 3px;
+        color: white;
+    }
+}
+@media(min-width: 1070px){
+    a{
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .cart{
+    padding: 6px;  
+    right: 50px;
+    }
+    .name{
+    left: 50px;
+    }
+    .img{
+        height: 300px;
+        border-radius: 20px;
+    }
+    .w-cont {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-left: 2.5vw;
+    }
+    .w-cont div button {
+        display: block;
+        width: 80%;
+        height: 30px;
+        position: relative;
+        margin-left: 17px;
+        border-radius: 20px;
+        border: 1px solid;
+    }
+    .bttn-1 {
+        margin-bottom: 30px;
+        margin-top: -70px;
+        top: -23px;
+    }
+    .bttn-2 {
+        margin-bottom: 5px;
+        top: -1px;
+        margin-top: -40px;
+    }
+    .red-not {
+        width: 15px;
+        height: 15px;
+        background-color: rgb(88, 88, 88);
+        position: relative;
+        border-radius: 50%;
+        bottom: 23px;
+        left: 65px;
+        padding-bottom: 19px;
+        padding-left: 3px;
+        color: white;
+    }
+}
+.top-a:hover {
+    border-bottom: var(--co5) solid 2px;
+}
+.cart:hover{
+    background-color: var(--co2);
+}
+.db {
+    display: none;
+}
+.w-cont {
+    margin-top: 40px;
+}
+.w-cont div p {
+    width: 47%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 20px;
+    padding-left: 10%;
+    padding-top: 3%;
+    position: relative;
+    top: -29%;
+    left: 9%;
+    color: black;
+    font-weight: bold;
+}
+.for {
+    position: relative;
+    width: 20px;
+    top: -30.5%;
+    left: -12%;
+}
+.back {
+    position: relative;
+    width: 20px;
+    top: -30.5%;
+    right: -12%;
+}
+.bttn-1:hover, .bttn-2:hover {
+    background-color: rgb(207, 207, 207);
+}
+.bttn-1:active, .bttn-2:active {
+    background-color: rgb(82, 82, 82);
+    color: white;
+}
+.red-not {
+    opacity: 0;
+}
+dialog {
+    width: 300px;
+    height: calc(150px + auto);
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+.dia-p {
+    margin-left: 10px;
+}
